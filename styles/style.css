@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    background: var(--azul-claro);
+}
+
+:root {
+
+    --azul-oscuro: #0A3871;
+    --azul-claro: #D8DFE8;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+.mensaje{
+    font-family: var(--fuente-inter);
+}
+
+.presentacion {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.presentacion__contenido__titulo {
+    font-family: var(--fuente-inter);
+    color: var(--azul-oscuro);
+}
+
+.presentacion__encriptar {
+    background-color: var(--azul-oscuro);
+    color: white;
+    border-radius: 24px;
+    padding: 24px;
+    width: 100%;
+    height: 67px;
+    margin: 5px;
+}
+
+
+.presentacion__desencriptar {
+    background-color: var(--azul-claro);
+    color: var(--azul-oscuro);
+    border-radius: 24px;
+    padding: 24px;
+    width: 100%;
+    margin: 5px;
+    height: 67px;
+}
+
+.contenido__copiar {
+    background-color: var(--azul-claro);
+    color: var(--azul-oscuro);
+    border-radius: 24px;
+    padding: 24px;
+    height: 67px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.presentacion__botones {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+
+
+.presentacion__primera{
+    margin: 30px;
+}
+.presentacion__segunda{
+    margin: 30px;
+}
+::placeholder {
+    color: var(--azul-oscuro);
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenido__textarea {
+    font-size: 1.5rem;
+    caret-color: var(--azul-oscuro);
+}
+
+
+@media (max-width: 1200px) {
+
+    .presentacion {
+        flex-direction: column;
+
+    }
+
+    .contenido__textarea {
+        width: auto;
+    }
+    .presentacion__imagen{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .presentacion__botones {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .contenido__textarea {
+        width: 100%;
+    }
+
+    .presentacion__imagen{
+        display: none;
+    }
+
+}
+
+
+.presentacion__encriptar:hover{
+    background-color: #272727;
+}
+
+
+.presentacion__desencriptar:hover{
+    background-color: var(--azul-oscuro);
+    color: aliceblue;
+}
+
+.contenido__copiar:hover{
+    background-color: var(--azul-oscuro);
+    color: aliceblue;
+}
